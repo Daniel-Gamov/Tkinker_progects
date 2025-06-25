@@ -1,24 +1,3 @@
-#import tkinter as tk
-#import random
-
-##root = tk.Tk()
-#root.title("Colorful Counter")
-#root.geometry('400x400')
-
-#colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"]
-
-#label = tk.Label(root, text="Click me!", font=("Comic Sans MS", 20), fg="black", bg="white")
-#label.pack(pady=20)
-
-#def random_color():
-#    label.config(fg=random.choice(colors), bg=random.choice(colors))
-
-#button = tk.Button(root, text="Change Color!", command=random_color, font=("Arial", 14))
-#button.pack()
-
-#root.mainloop()
-
-#__________________________________
 
 import tkinter as tk
 
@@ -26,11 +5,11 @@ root = tk.Tk()
 root.title("Entry Box Example")
 root.geometry("300x200")
 
-# Създаване на поле за въвеждане (Entry)
+# Creating an Entry Field
 entry = tk.Entry(root, font=("Courier", 14))
 entry.pack(pady=10)
 
-# Функция за вземане на текста
+# Text capture function
 def show_text():
     text = entry.get()
     label.config(text=f"Въведен текст: {text}")
@@ -50,11 +29,11 @@ def remove_last_3():
 
 
 
-# Бутон за показване на въведения текст
+# Button to show entered text
 button = tk.Button(root, text="Покажи текста", command=show_text, font=("Courier", 12))
 button.pack()
 
-# Етикет за показване на резултата
+# Result display label
 label = tk.Label(root, text="Тук ще се покаже текстът!", font=("Courier", 12))
 label.pack(pady=10)
 
